@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B907C015-6825-487A-9E67-FF0B45D784FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KorisnickiDeo</RootNamespace>
+    <AssemblyName>KorisnickiDeo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BiranjePice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiranjePice.Designer.cs">
+      <DependentUpon>BiranjePice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CenaKorisnicki.cs" />
+    <Compile Include="CenePicaKorisnicki.cs" />
+    <Compile Include="GotoveCeneKorisnicki.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiranjeVelicineiKolicine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BiranjeVelicineiKolicine.Designer.cs">
+      <DependentUpon>BiranjeVelicineiKolicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Korpa1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korpa1.Designer.cs">
+      <DependentUpon>Korpa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NevegetarijanskiMeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NevegetarijanskiMeni.Designer.cs">
+      <DependentUpon>NevegetarijanskiMeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Potvrda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Potvrda.Designer.cs">
+      <DependentUpon>Potvrda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vegeterijanac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vegeterijanac.Designer.cs">
+      <DependentUpon>Vegeterijanac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VegeterijanskiMeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VegeterijanskiMeni.Designer.cs">
+      <DependentUpon>VegeterijanskiMeni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VrstaGotovePice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VrstaGotovePice.Designer.cs">
+      <DependentUpon>VrstaGotovePice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BiranjePice.resx">
+      <DependentUpon>BiranjePice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BiranjeVelicineiKolicine.resx">
+      <DependentUpon>BiranjeVelicineiKolicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korpa1.resx">
+      <DependentUpon>Korpa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NevegetarijanskiMeni.resx">
+      <DependentUpon>NevegetarijanskiMeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Potvrda.resx">
+      <DependentUpon>Potvrda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vegeterijanac.resx">
+      <DependentUpon>Vegeterijanac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VegeterijanskiMeni.resx">
+      <DependentUpon>VegeterijanskiMeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VrstaGotovePice.resx">
+      <DependentUpon>VrstaGotovePice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RadnickiDeo\RadnickiDeo.csproj">
+      <Project>{6c4317ac-9ee9-4e54-a299-86a83a192410}</Project>
+      <Name>RadnickiDeo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
